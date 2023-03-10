@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" stylesheets="@../../../CssStyle/ImageFon.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.praktikam.HelloController">
+   <children>
+      <Pane layoutX="29.0" layoutY="23.0" prefHeight="64.0" prefWidth="216.0" style="-fx-background-color: white; -fx-opacity: 70%; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 2;">
+         <children>
+            <Label layoutX="23.0" layoutY="11.0" prefHeight="43.0" prefWidth="171.0" text="Ремонт квартир под ключ" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="29.0" layoutY="125.0" prefHeight="335.0" prefWidth="384.0" style="-fx-background-color: white; -fx-opacity: 70%; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 2;">
+         <children>
+            <Label layoutX="28.0" layoutY="15.0" prefHeight="25.0" prefWidth="171.0" text="ЭЛЕКТРОМОНТАЖ" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="47.0" prefHeight="25.0" prefWidth="299.0" text="ОТОПЛЕНИЕ И ВОДОСНАБЖЕНИЕ" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="81.0" prefHeight="25.0" prefWidth="299.0" text="УСТАНОВКА НОВОЙ САНТЕХНИКИ" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="115.0" prefHeight="43.0" prefWidth="343.0" text="МЕХАНИЗИРОВАННАЯ ИЛИ РУЧНАЯ ШТУКАТУРКА СТЕН" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="168.0" prefHeight="43.0" prefWidth="343.0" text="МОКРАЯ ИЛИ ПОЛУСУХАЯ МЕХАНИЗИРОВАННАЯ СТЯЖКА ПОЛА" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="221.0" prefHeight="43.0" prefWidth="343.0" text="ВСЕ ВИДЫ ДЕКОРАТИВНЫХ ПОКРЫТИЙ" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="272.0" prefHeight="43.0" prefWidth="343.0" text="УКЛАДКА ВСЕХ ВИДОВ НАПОЛЬНЫХ ПОКРЫТИЙ" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="664.0" layoutY="14.0" prefHeight="91.0" prefWidth="216.0" style="-fx-background-color: white; -fx-opacity: 70%; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 2;">
+         <children>
+            <Label layoutX="42.0" layoutY="14.0" prefHeight="25.0" prefWidth="148.0" text="8 (999) 456-12-51" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="39.0" prefHeight="43.0" prefWidth="191.0" text="График работы с 8:00 до 20:00" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="472.0" layoutY="125.0" prefHeight="284.0" prefWidth="384.0" style="-fx-background-color: white; -fx-opacity: 90%; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: orange; -fx-border-width: 2;">
+         <children>
+            <Label layoutX="118.0" layoutY="14.0" prefHeight="25.0" prefWidth="148.0" text="Оставьте заявку" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="79.0" layoutY="39.0" prefHeight="25.0" prefWidth="226.0" text="на бесплатный вызов замерщика" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfName" layoutX="118.0" layoutY="87.0" promptText="Ваше имя" />
+            <TextField fx:id="tfPhone" layoutX="118.0" layoutY="131.0" promptText="8 000 000 00 00" />
+            <ComboBox fx:id="comboVidRem" layoutX="117.0" layoutY="176.0" prefWidth="150.0" />
+            <Button fx:id="btnZayavk" layoutX="57.0" layoutY="238.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="269.0" style="-fx-background-color: orange;" text="Отправить заявку" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="lbZayavk" layoutX="126.0" layoutY="211.0" textFill="#f71e01">
+               <font>
+                  <Font name="Arial Bold Italic" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="btnVidRem" layoutX="529.0" layoutY="483.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="269.0" style="-fx-background-color: red;" text="Виды ремонта" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Button>
+      <Pane fx:id="paneVidRem" layoutX="26.0" layoutY="115.0" prefHeight="474.0" prefWidth="832.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: red; -fx-border-width: 2;" visible="false">
+         <children>
+            <Pane layoutX="21.0" layoutY="49.0" prefHeight="415.0" prefWidth="253.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 2;">
+               <children>
+                  <Label alignment="TOP_CENTER" layoutX="41.0" layoutY="2.0" prefHeight="25.0" prefWidth="171.0" text="Ремонт &quot;Стандарт&quot;" wrapText="true">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="154.0" fitWidth="213.0" layoutX="24.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/standart.jpg" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <Label alignment="TOP_LEFT" layoutX="24.0" layoutY="190.0" prefHeight="194.0" prefWidth="205.0" text="Выравнивание; Поклейка обоев; Замена розеток и выключателей (с переносом и добавлением точек); Изготовление электрического щита; Комбинированная укладка напольного покрытия; Монтаж ХВС, ГВС, канализации; Замена радиаторов; С/у: кафель, установка ванны, унитаза, раковины; Установка натяжного потолка со светильниками" wrapText="true">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font></Label>
+                  <Label alignment="TOP_CENTER" layoutX="66.0" layoutY="384.0" prefHeight="25.0" prefWidth="122.0" text="от 4000 руб./м2" textFill="#f40101" wrapText="true">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane layoutX="290.0" layoutY="49.0" prefHeight="415.0" prefWidth="253.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 2;">
+               <children>
+                  <Label alignment="TOP_CENTER" layoutX="41.0" layoutY="2.0" prefHeight="25.0" prefWidth="171.0" text="Ремонт &quot;Евро&quot;" wrapText="true">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="144.0" fitWidth="312.0" layoutX="18.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/evro.jpg" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <Label alignment="TOP_LEFT" layoutX="24.0" layoutY="189.0" prefHeight="166.0" prefWidth="205.0" text="Ремонт “Стандарт” + Изготовление дизайн-проекта; ГКЛ конструкция; Декоративные элементы (фрески, галтели, пано, молдинги); С/у – Инсталляция, душевой поддон (изготовление); Присоединение балкона к комнате; Перепланировка помещения; Кондиционирование" wrapText="true">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" layoutX="65.0" layoutY="382.0" prefHeight="25.0" prefWidth="122.0" text="от 6000 руб./м2" textFill="#f40101" wrapText="true">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane layoutX="557.0" layoutY="49.0" prefHeight="415.0" prefWidth="253.0" style="-fx-background-color: white; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 2;">
+               <children>
+                  <Label alignment="TOP_CENTER" layoutX="41.0" layoutY="2.0" prefHeight="25.0" prefWidth="171.0" text="Ремонт &quot;Элит&quot;" wrapText="true">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="125.0" fitWidth="310.0" layoutX="15.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../image/elit.jpg" />
+                     </image>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </ImageView>
+                  <Label alignment="TOP_LEFT" layoutX="24.0" layoutY="187.0" prefHeight="125.0" prefWidth="205.0" text="Ремонт “Евро” + Обустройство сауны; Нанесение декоративной штукатурки; Увеличение мощности в электрическом щите; Монтаж системы “Умный дом”" wrapText="true">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="TOP_CENTER" layoutX="65.0" layoutY="382.0" prefHeight="25.0" prefWidth="122.0" text="от 10000 руб./м2" textFill="#f40101" wrapText="true">
+                     <font>
+                        <Font name="Arial Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Button fx:id="btnBackVid" layoutX="774.0" layoutY="7.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="35.0" style="-fx-background-color: transparent;" text="Х" textFill="#df0707">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label alignment="TOP_CENTER" layoutX="331.0" layoutY="14.0" prefHeight="25.0" prefWidth="171.0" text="Виды ремонта" wrapText="true">
+               <font>
+                  <Font name="Arial Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button fx:id="btnAuto" layoutX="406.0" layoutY="29.0" mnemonicParsing="false" text="Авторизация">
+         <font>
+            <Font name="Arial Bold" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

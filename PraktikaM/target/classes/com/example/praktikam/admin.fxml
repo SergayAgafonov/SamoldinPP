@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../CssStyle/ImageFon.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.praktikam.Admin">
+   <children>
+      <Button fx:id="btnBack1" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Х" visible="false">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+      <Pane fx:id="paneAuto" layoutX="200.0" layoutY="100.0" prefHeight="204.0" prefWidth="218.0" style="-fx-background-color: white; -fx-opacity: 95%; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: black; -fx-border-width: 2;">
+         <children>
+            <Label layoutX="54.0" layoutY="14.0" text="Авторизация">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfLogin" layoutX="35.0" layoutY="62.0" promptText="Логин" />
+            <TextField fx:id="tfPass" layoutX="35.0" layoutY="102.0" promptText="Пароль" />
+            <Button fx:id="btnAuto" layoutX="83.0" layoutY="151.0" mnemonicParsing="false" text="Войти">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnBack" layoutY="1.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Х">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="wtext" alignment="TOP_CENTER" layoutX="23.0" layoutY="127.0" prefHeight="15.0" prefWidth="172.0">
+               <font>
+                  <Font name="Arial Bold" size="12.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <TableView fx:id="tableZayavk" layoutX="81.0" layoutY="67.0" prefHeight="270.0" prefWidth="438.0" visible="false">
+        <columns>
+          <TableColumn fx:id="tcID" prefWidth="29.199981689453125" text="ID" />
+          <TableColumn fx:id="tcName" prefWidth="116.60004425048828" text="Имя" />
+            <TableColumn fx:id="tcPhone" prefWidth="126.5999755859375" text="Телефон" />
+            <TableColumn fx:id="tcRem" prefWidth="163.59994506835938" text="Вид ремонта" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnDelete" layoutX="236.0" layoutY="347.0" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Удалить заявку" visible="false">
+         <font>
+            <Font name="Arial Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
